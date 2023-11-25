@@ -126,12 +126,12 @@ const Home: NextPage = () => {
                   </Tr>
                 </Thead>
                 <Tbody>
-                  {isFetched && todos.length === 0 && (
+                  {isFetched && todos?.length === 0 && (
                     <Tr>
                       <Td colSpan={3} textAlign={'center'}>No Todo</Td>
                     </Tr>
                   )}
-                  {isFetched && todos.length !== 0 && todos.map((todo: any) => (
+                  {isFetched && todos?.length !== 0 && todos?.map((todo: any) => (
                     <Tr key={todo.id} >
                       <Td>{todo.title}</Td>
                       <Td> {todo.description}</Td>
